@@ -3,7 +3,7 @@ var db = require("../database.js");
 exports.books = {};
 
 exports.index = function(req, res) {
-  res.render("index");
+  res.render("index", { "title": "Backbone App"});
 };
 
 exports.books.all = function (req, res) {
